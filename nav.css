@@ -20,8 +20,10 @@ section {
 }
 
 ::-webkit-scrollbar {
+  scrollbar-width: none;
   width: 0;
 }
+
 #path {
   position: fixed;
   top: 0;
