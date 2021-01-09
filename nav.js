@@ -8,13 +8,14 @@ window.onresize = function (event) {
   change = (window.pageYOffset / max) * 100;
 };
 
-console.log(change);
+// console.log(change);
 if (change == 0) {
-  p.innerHTML = "Page Scrolled " + Math.round(change) + "%";
+  p.innerHTML = Math.round(change) + "%";
 }
 
 window.onscroll = function () {
   change = (window.pageYOffset / max) * 100;
   progress.style.height = change + "%";
-  p.innerHTML = "Page Scrolled " + Math.round(change) + "%";
+  //   p.innerHTML = "Page Scrolled " + Math.round(change) + "%";
+  p.innerHTML = Math.round(change) + "%";
 };
