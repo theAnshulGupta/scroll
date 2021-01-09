@@ -84,6 +84,8 @@ section {
 }
 
 #percent {
+  font-family: "Raleway";
+
   height: 20px;
   width: 43px;
   text-align: center;
