@@ -1,4 +1,4 @@
-let progress = document.getElementById("progressbar");
+let progress = document.getElementById("scroll");
 let p = document.getElementById("percent");
 let max = document.body.scrollHeight - window.innerHeight;
 let change = (window.pageYOffset / max) * 100;

@@ -22,7 +22,7 @@ section {
 ::-webkit-scrollbar {
   width: 0;
 }
-#scrollPath {
+#path {
   position: fixed;
   top: 0;
   right: 0;
@@ -31,7 +31,7 @@ section {
   background: rgba(255, 255, 255, 0.05);
 }
 
-#progressbar {
+#scroll {
   position: fixed;
   top: 0;
   right: 0;
@@ -49,7 +49,7 @@ section {
     filter: hue-rotate(360deg);
   }
 }
-#progressbar:before {
+#scroll:before {
   content: "";
   position: absolute;
   top: 0;
@@ -59,7 +59,7 @@ section {
   background: linear-gradient(to top, #005aff, #00ffe7);
   filter: blur(10px);
 }
-#progressbar:after {
+#scroll:after {
   content: "";
   position: absolute;
   top: 0;
