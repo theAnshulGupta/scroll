@@ -72,24 +72,28 @@ section {
 }
 
 #percent {
+  height: 20px;
+  width: 43px;
+  text-align: center;
   position: fixed;
   bottom: 15px;
   right: 25px;
   color: #fff;
-  font-size: 2em;
+  font-size: 1.5em;
+
+  background: rgba(26, 22, 22, 0.5);
+  padding: 20px 30px;
 
   /* background */
   /* background: linear-gradient(
     to top,
     rgba(31, 37, 41, 0.2),
     rgba(3, 63, 57, 0.5)
-  ); */
-  background: rgba(51, 43, 43, 0.4);
+  ); 
   animation: lights 5s linear infinite;
-  padding: 10px 20px;
+  */
   /* height: 10px; */
   /* width: 20px; */
-  border: 3px solid red;
 
   /* make it sideways */
   /* transform: translateY(-50%) rotate(180deg); */
