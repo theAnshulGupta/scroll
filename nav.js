@@ -1,10 +1,14 @@
 let progress = document.getElementById("progressbar");
 let p = document.getElementById("percent");
-let totalHeight = document.body.scrollHeight - window.innerHeight;
+let max = document.body.scrollHeight - window.innerHeight;
+let change = (window.pageYOffset / max) * 100;
+console.log(change);
+if (change == 0) {
+  p.innerHTML = "Page Scrolled " + Math.round(change) + "%";
+}
 
 window.onscroll = function () {
-  let progressHeight = (window.pageYOffset / totalHeight) * 100;
-  progress.style.height = progressHeight + "%";
-  p.innerHTML = "Page Scrolled " + Math.round(progressHeight) + "%";
-  console.log(p);
+  change = (window.pageYOffset / max) * 100;
+  progress.style.height = change + "%";
+  p.innerHTML = "Page Scrolled " + Math.round(change) + "%";
 };
